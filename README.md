@@ -16,6 +16,6 @@ You can watch videos on NS2 implementations here:
 http://www.jgyan.com/ns2/
 
 You can also view NS2 code samples here
-*[ns-2 Simulation Code and Examples](http://www.cs.bu.edu/groups/itm/SATS/simulation.html)
-*[NS by Example](http://nile.wpi.edu/NS/)
+* [ns-2 Simulation Code and Examples](http://www.cs.bu.edu/groups/itm/SATS/simulation.html)
+* [NS by Example](http://nile.wpi.edu/NS/)
 
