@@ -5,7 +5,9 @@ You can install a PPA package that provides Wireshark 1.8.2 to 12.04 rather than
 To install the PPA, run the following commands:
 
 > sudo add-apt-repository ppa:eugenesan/ppa
+
 > sudo apt-get update
+
 > sudo apt-get install wireshark
 
 ### To start Wireshark, run the command sudo wireshark
