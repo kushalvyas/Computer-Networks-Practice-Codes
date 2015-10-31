@@ -9,6 +9,7 @@ compile both the files
 
 * To Run : 
 Open 2 command windows
+
 Execute server.java first in the first command window
 
 > java server
