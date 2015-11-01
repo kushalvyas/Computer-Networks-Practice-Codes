@@ -1,3 +1,5 @@
+
+
 # create simulator
 set ns [new Simulator]
 
@@ -32,6 +34,7 @@ set udp02 [new Agent/UDP]
 set udp03 [new Agent/UDP]
 set udp04 [new Agent/UDP]
 
+set udp10 [new Agent/UDP]
 set udp12 [new Agent/UDP]
 set udp13 [new Agent/UDP]
 
@@ -47,6 +50,7 @@ $ns attach-agent $n0 $udp02
 $ns attach-agent $n0 $udp03
 $ns attach-agent $n0 $udp04
 
+$ns attach-agent $n1 $udp10
 $ns attach-agent $n1 $udp12
 $ns attach-agent $n1 $udp13
 
@@ -82,6 +86,12 @@ $cbr04 set interval_ 0.005
 $cbr04 attach-agent $udp04
 
 # node 1
+set cbr10 [new Application/Traffic/CBR]
+$cbr10 set packetSize_ 500
+$cbr10 set interval_ 0.005
+$cbr10 attach-agent $udp10
+
+
 set cbr12 [new Application/Traffic/CBR]
 $cbr12 set packetSize_ 500
 $cbr12 set interval_ 0.005
@@ -106,6 +116,7 @@ set null03 [new Agent/Null]
 set null04 [new Agent/Null]
 
 # wrt node 1
+set null10 [new Agent/Null]
 set null12 [new Agent/Null]
 set null13 [new Agent/Null]
 
@@ -113,15 +124,20 @@ set null13 [new Agent/Null]
 set null21 [new Agent/Null]
 
 # assign null to the sockets
-$ns attach-agent $n1 $null01
-$ns attach-agent $n2 $null02
-$ns attach-agent $n3 $null03
-$ns attach-agent $n4 $null04
+$ns attach-agent $n0 $null10
 
+$ns attach-agent $n1 $null01
 $ns attach-agent $n1 $null21
 
+$ns attach-agent $n2 $null02
 $ns attach-agent $n2 $null12
+
 $ns attach-agent $n3 $null13
+$ns attach-agent $n3 $null03
+
+$ns attach-agent $n4 $null04
+
+
 
 
 
@@ -133,6 +149,7 @@ $ns connect $udp02 $null02
 $ns connect $udp03 $null03
 $ns connect $udp04 $null04
 
+$ns connect $udp10 $null10
 $ns connect $udp12 $null12
 $ns connect $udp13 $null13
 
@@ -147,6 +164,7 @@ $ns at 1.1 "$cbr04 start"
 $ns at 2.1 "$cbr12 start"
 $ns at 2.1 "$cbr13 start"
 $ns at 2.1 "$cbr21 start"
+$ns at 1.0 "$cbr10 start"
 
 $ns at 4.0 "$cbr01 stop"
 $ns at 4.0 "$cbr02 stop"
@@ -155,5 +173,6 @@ $ns at 4.0 "$cbr04 stop"
 $ns at 4.0 "$cbr12 stop"
 $ns at 4.0 "$cbr13 stop"
 $ns at 4.0 "$cbr21 stop"
+$ns at 4.0 "$cbr10 stop"
 
 $ns run
