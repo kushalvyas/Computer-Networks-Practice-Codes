@@ -9,6 +9,8 @@ set nf [open out.nam w]
 # put $ns ka all operations in $nf (the file)
 $ns namtrace-all $nf
 
+##################### for all your programs.. your code goes here ##############################
+
 $ns run
 
 
