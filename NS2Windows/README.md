@@ -2,4 +2,14 @@
 
 ## Follow these steps
 
-1. 
+1. Download the zip folder from the given link : (click on "View Raw")
+2. Unzip the folder in a suitable location
+3. Open Command Window (CMD)
+4. Go to your folder where you have unzipped NS2Windows.zip
+5. In the Command Line type .. 
+
+	> ns test.tcl
+
+	> nam out.nam
+
+6. Please save all your codes in the same folder.
