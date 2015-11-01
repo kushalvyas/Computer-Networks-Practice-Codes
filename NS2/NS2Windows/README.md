@@ -6,7 +6,7 @@
 2. Unzip the folder in a suitable location
 3. Open Command Window (CMD)
 4. Go to your folder where you have unzipped NS2Windows.zip
-5. In the Command Line type .. 
+5. In the Command Line type .. (test.tcl is already there as a sample .. )
 
 	> ns test.tcl
 
