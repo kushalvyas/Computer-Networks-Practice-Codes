@@ -2,7 +2,7 @@
 
 ## Follow these steps
 
-1. Download the zip folder from the given link : (click on "View Raw")
+1. Download the zip folder from the given link : ( Click on NS2Windows.zip and then click on "View Raw")
 2. Unzip the folder in a suitable location
 3. Open Command Window (CMD)
 4. Go to your folder where you have unzipped NS2Windows.zip
