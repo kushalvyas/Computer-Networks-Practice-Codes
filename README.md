@@ -19,6 +19,6 @@
 * [Kushal Vyas](http://www.github.com/kushalvyas)
 * [Aashni Savani](http://www.github.com/aashnisavani)
 * [Yash Vora](http://www.github.com/yashvora)
+* [Roshan Pande](http://www.github.com/roshanpande)
 
-
-P.S. If u have more codes.Please feel free to add to the repository . 
+P.S. If you have more codes, please feel free to add to the repository. 
