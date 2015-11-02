@@ -1,5 +1,7 @@
 # Codes in this sub - repo:
 
+You can know more [here](http://users.cis.fiu.edu/~downeyt/cop3402/hamming.html)
+
 ## To compile:
 
 	> javac filename.java
