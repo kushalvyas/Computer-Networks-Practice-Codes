@@ -23,3 +23,4 @@ To execute :
 4. Star Topology
 5. Ring Topology
 6. Mesh Topology
+7. Bus Topology (u'll need to align the shape .. click on 'edit' and replace the nodes in nam)
