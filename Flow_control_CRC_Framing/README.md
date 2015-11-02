@@ -10,3 +10,4 @@
 
 1. Bit stuffing
 2. Char stuffing
+3. Hamming Code (n bit)
