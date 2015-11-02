@@ -3,7 +3,7 @@ import java.io.*;
 
 class charstuffing {
 	public static void main(String[] args) throws IOException {
-		String flag = "DLEETX";
+	
 		System.out.println("Enter the String of message (pleaes enter all capital letters)");
 		// take input in buffered readmer
 		BufferedReader bfr = new BufferedReader(new InputStreamReader(System.in));
