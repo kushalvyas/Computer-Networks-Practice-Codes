@@ -16,9 +16,9 @@
 7. Imp viva questions
 
 ## Contributors:
-* [Kushal Vyas](www.github.com/kushalvyas)
-* [Aashni Savani](www.github.com/aashnisavani)
-* [Yash Vora](www.github.com/yashvora)
+* [Kushal Vyas](http://www.github.com/kushalvyas)
+* [Aashni Savani](http://www.github.com/aashnisavani)
+* [Yash Vora](http://www.github.com/yashvora)
 
 
 P.S. If u have more codes.Please feel free to add to the repository . 
