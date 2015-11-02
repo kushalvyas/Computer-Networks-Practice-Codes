@@ -19,7 +19,8 @@ class hamming{
 		System.out.println("Your final data string will be "+ final_length +" bits");
 
 		System.out.println("Enter the binary message of "+ data_length + " bits");
-		String string = bfr.readLine();
+		String s = bfr.readLine();
+		String string = new StringBuffer(s).reverse().toString();
 		int length = 0;
 		if(string.length() == data_length){
 			int [] number = new int[string.length()];
@@ -82,7 +83,11 @@ class hamming{
 
 		}
 		System.out.println("Dont consider the 0th element... It's extra");
-		System.out.println("Hamming encoded string"+Arrays.toString(data));
+		System.out.println("Hamming encoded string");
+		for (int i=data.length-1; i>0; i--) {
+			System.out.print(data[i]);
+		}
+		System.out.println();
 		// int [] ret = new int[length];
 		// return System.arraycopy(data,1,ret, 0,ret.length);
 
