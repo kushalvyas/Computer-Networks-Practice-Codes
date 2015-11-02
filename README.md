@@ -1,4 +1,4 @@
-## Computer Networks Semester 5 (University of Mumbai  CPC 504  )
+## Computer Networks (University of Mumbai  CPC 504  )
 
 
 
