@@ -1,5 +1,7 @@
 # Installation of NS2 on windows.
 
+This is a small portable version of NS2 which can run on windows using the binaries :P 
+
 ## Follow these steps
 
 1. Download the zip folder from the given link : ( Click on NS2Windows.zip and then click on "View Raw")
