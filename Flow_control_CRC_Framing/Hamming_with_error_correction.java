@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 //Wiki-Hamming code
-public class Hamming_with_error_correction {
+public class Hamming{
 	public static void main(String args[])throws IOException
 	{
 		//Considering even parity
@@ -39,6 +39,7 @@ public class Hamming_with_error_correction {
 				for(k = 0; k < jump; k++){
 					check += code[j+k];
 				}
+			}
 				if(check % 2 == 0){//parity is even so no error for p(i)
 					error[i] = 0;
 				}
@@ -46,7 +47,7 @@ public class Hamming_with_error_correction {
 					error[i] = 1;
 				}
 				
-			}
+			
 		}
 		int error_position = 0;
 		for(i = 0; i < m_bits; i++){//Binary to decimal conversion
@@ -92,6 +93,7 @@ public class Hamming_with_error_correction {
 				{
 					check += code[j+k];
 				}
+			}
 				if(check % 2 == 0){//Even parity without parity bit so parity bit will remain 0
 					code[start] = 0;
 				}
@@ -99,7 +101,7 @@ public class Hamming_with_error_correction {
 					code[start] = 1;
 				}
 				
-			}
+			
 		}
 		//DISPLAY
 		for(i = 1; i <= data_bits; i++){
