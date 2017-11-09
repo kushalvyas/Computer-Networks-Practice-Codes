@@ -10,7 +10,7 @@ class charstuffing {
 		String message = bfr.readLine();
 		// replace DLE flag by DLEDLE
 		String finalmessage = message.replaceAll("DLE","DLEDLE");
-		finalmessage = 'DLESTX' + finalmessage +'DLEETX';
+		finalmessage = "DLESTX" + finalmessage +"DLEETX";
 		System.out.println("Final Character stuffing message is : "+finalmessage);
 	}
 }
